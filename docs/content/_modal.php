@@ -8,8 +8,8 @@
 	<div class="modal__close">
 		<i class="ss-icon ss-standard">close</i>
 	</div>
-	<div class="wrap wrap--top-pad">
-		<div class="title title--all">
+	<div class="about-section">
+		<div class="title title--all title--about">
 			KEY AF
 		</div>
 		<?php

@@ -1,8 +1,8 @@
 .modal {
 	position: fixed;
 	top: 0;
-	left: $shoulder;
-	right: $shoulder;
+	left: 0;
+	right: 0;
 	bottom: 0;
 	background-color: $purple;
 	z-index: 10;
@@ -21,8 +21,9 @@
 		color: $white;
 		font-weight: 900;
 		text-transform: uppercase;
-		right: 1rem;
+		right: 2rem;
 		top: .6rem;
+		z-index:18;
 
 		&:hover {
 			cursor: pointer;
@@ -42,4 +43,40 @@
 		cursor: pointer;
 	}
 
+}
+.about-section {
+	padding: 0 2rem;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+    height: 100%;
+
+	@mixin atSmall {
+		width: 27rem;
+		margin: 0 auto;
+	}
+
+	@mixin atMedium {
+		width: 36rem;
+		margin: 0 auto;
+	}
+
+	@mixin atLarge {
+		width: 45rem;
+		margin: 0 auto;
+	}
+	
+	& a {
+	    background-color: #fff;
+	    text-decoration: none;
+	    color: $purple;
+	    font-weight: 900;
+	    text-transform: uppercase;
+	    padding: .33rem .475rem .125rem;
+	    margin: -.33rem 0 -.125rem;
+
+	    &:hover {
+	    	background-color: transparent;
+	    	color: $white;
+	    }
+	}
 }

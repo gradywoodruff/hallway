@@ -740,8 +740,8 @@ a.path {
 .modal {
 	position: fixed;
 	top: 0;
-	left: 1rem;
-	right: 1rem;
+	left: 0;
+	right: 0;
 	bottom: 0;
 	background-color: #2E2232;
 	z-index: 10;
@@ -760,8 +760,9 @@ a.path {
   color: #FFFFFF;
   font-weight: 900;
   text-transform: uppercase;
-  right: 1rem;
+  right: 2rem;
   top: .6rem;
+  z-index:18;
 }
 .modal__close:hover {
   cursor: pointer;
@@ -777,6 +778,43 @@ a.path {
 }
 .question i:hover {
   cursor: pointer;
+}
+.about-section {
+	padding: 0 2rem;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+    height: 100%;
+}
+@media (min-width: 570px) {
+  .about-section {
+    width: 27rem;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 950px) {
+  .about-section {
+    width: 36rem;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1200px) {
+  .about-section {
+    width: 45rem;
+    margin: 0 auto;
+  }
+}
+.about-section a {
+  background-color: #fff;
+  text-decoration: none;
+  color: #2E2232;
+  font-weight: 900;
+  text-transform: uppercase;
+  padding: .33rem .475rem .125rem;
+  margin: -.33rem 0 -.125rem;
+}
+.about-section a:hover {
+  background-color: transparent;
+  color: #FFFFFF;
 }
 .link {
 	text-decoration: none;
@@ -904,6 +942,9 @@ input:-moz-placeholder { /* Firefox 18- */
 	font-weight: 900;
 	text-transform: uppercase;
 	margin: 1.8rem 0;
+}
+.title--about {
+  padding-top: 6rem;
 }
 .tutorial {
 	margin: 3rem 0;
