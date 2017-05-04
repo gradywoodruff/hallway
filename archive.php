@@ -6,7 +6,6 @@
 
 	<?php } elseif ( is_day() ) { ?>
 
-		<?php get_template_part('parts/_title'); ?>
 		<?php get_template_part('parts/archives/_day'); ?>
 		<?php get_template_part('parts/_footer'); ?>
 

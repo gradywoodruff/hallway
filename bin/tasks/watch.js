@@ -12,6 +12,11 @@ gulp.task('watch_copyFontFiles', function() {
         .pipe(gulp.dest("./assets/fonts"));
 });
 
+gulp.task('watch_copyAdminFiles', function() {
+    return gulp.src('./app/admin/**/*.css')
+        .pipe(gulp.dest("./assets/styles"));
+});
+
 gulp.task('watch_copyIconFiles', function() {
     return gulp.src('./app/ico/**')
         .pipe(gulp.dest("./assets/ico"));
@@ -68,6 +73,7 @@ gulp.task('watch_uglify', function() {
 gulp.task('watch', [
         'watch_copyFontFiles',
         'watch_copyIconFiles',
+        'watch_copyAdminFiles',
         'watch_optimizeImages',
         'watch_uglifyTrigger'
     ], function() {
@@ -84,6 +90,9 @@ gulp.task('watch', [
     watch('./app/styles/**/*.css', function() {
         gulp.start('cssInject');
     });
+    watch('./app/admin/**/*.css', function() {
+        gulp.start('adminInject');
+    });
 
     watch('./app/scripts/**/*.js', function() {
         gulp.start('scriptsRefresh');
@@ -93,6 +102,10 @@ gulp.task('watch', [
 
 gulp.task('cssInject', ['styles'], function() {
     return gulp.src('./assets/styles/styles.css')
+        .pipe(browserSync.stream());
+});
+gulp.task('adminInject', ['admin'], function() {
+    return gulp.src('./assets/styles/admin.css')
         .pipe(browserSync.stream());
 });
 

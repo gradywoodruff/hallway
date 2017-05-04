@@ -1,0 +1,13 @@
+html.wp-toolbar {
+	padding-top: 0;
+}
+body.wp-admin {
+	font-family: gotham;
+	background-color: #fff;
+}
+#wpadminbar {
+	display: none;
+}
+.menu-icon-dashboard {
+	display: none!important;
+}

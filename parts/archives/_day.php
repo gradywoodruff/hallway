@@ -4,6 +4,7 @@
 			<?php if (in_category( 'guest' )) { ?>
 			<?php } else { ?>
 			
+				<?php get_template_part('parts/_title'); ?>
 				<?php get_template_part('parts/_bumper'); ?>
 				<?php get_template_part('parts/_finds'); ?>
 			

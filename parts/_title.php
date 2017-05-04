@@ -36,6 +36,16 @@
 				<?php echo $totalresults; ?> <?php echo pluralize($totalresults, 'find', 'finds');?> with "<?php the_search_query(); ?>"
 			</div>
 
+		<?php } elseif ( is_page( 'random' )) { ?>
+
+			<div class="title__logo">
+				<?php get_template_part('parts/_logo'); ?>
+			</div>
+		
+			<div class="title__copy">
+				<?php echo get_the_date(); ?>
+			</div>
+
 		<?php } else { ?>
 
 			<div class="title__logo">

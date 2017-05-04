@@ -1,0 +1,25 @@
+
+#screen-options-link-wrap {
+	display: none;
+}
+#contextual-help-link-wrap {
+	display: none;
+}
+input[type=text], input[type=search], input[type=radio], input[type=tel], input[type=time], input[type=url], input[type=week], input[type=password], input[type=checkbox], input[type=color], input[type=date], input[type=datetime], input[type=datetime-local], input[type=email], input[type=month], input[type=number], select, textarea {
+    border: none;
+    box-shadow: none;
+    background-color: #fff;
+    color: #000;
+}
+.postbox {
+	border: none;
+}
+#post-body.columns-2 #postbox-container-1 {
+	background-color: $black;
+}
+
+#side-sortables {
+	.hndle.ui-sortable-handle {
+		display:none;
+	}
+}

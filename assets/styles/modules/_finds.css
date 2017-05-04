@@ -1,0 +1,16 @@
+.handlediv.button-link {
+	display: none;
+}
+.acf_postbox > .inside > .field {
+	border: none;
+}
+#acf-find_1_title {
+	.label {
+		display: none;
+	}
+}
+#acf-find_1_description {
+	.label {
+		display: none;
+	}
+}

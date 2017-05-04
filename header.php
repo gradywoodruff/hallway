@@ -9,6 +9,8 @@
 				<?php echo get_the_title(); ?>
 			<?php } elseif (is_day()) { ?>
 				<?php echo get_the_date(); ?>
+			<?php } elseif (is_page( 'random' )) { ?>
+				RANDOM FINDS
 			<?php } else { ?>
 				HALLWAY
 			<?php } ?>
@@ -40,6 +42,10 @@
 				intro 
 				page--finds
 			<?php } elseif (in_category( 'guest' )) { ?>
+				bump 
+				intro 
+				page--finds
+			<?php } elseif (is_page( 'random' )) { ?>
 				bump 
 				intro 
 				page--finds
