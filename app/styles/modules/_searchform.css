@@ -1,0 +1,83 @@
+.searchform {
+	position: fixed;
+	z-index: 5;
+	background-color: $black;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	opacity: 0;
+	visibility: hidden;
+	color: $white;
+	transition: opacity .333s ease-out, visibility .333s ease-out;
+
+	&--is-visible {
+		opacity: 1;
+		visibility: visible;
+
+	}
+
+	&__inner {
+		font-size: $textL;
+		line-height: 1;
+		padding-left: 1rem;
+		text-transform: uppercase;
+		position: absolute;
+		width: 100%;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+
+	&__close {
+		position: fixed;
+		top: 0.9rem;
+		right: 0.9rem;
+		font-size: $textS;
+		display: block;
+		color: $white;
+	    width: 3rem;
+	    text-align: right;
+	    margin-bottom: 0.45rem;
+
+		&:hover {
+			cursor: pointer;
+		}
+	}
+
+    & ::-moz-selection {
+		background-color: $black;
+		background: $black;
+		color: $yellow;
+	}
+
+	& ::selection {
+		background-color: $black;
+		background: $black;
+		color: $yellow;
+	}
+
+}
+input#s {
+    background: none;
+    border: none;
+    color: $white;
+    font-size: $textM;
+    text-transform: uppercase;
+    font-family: inherit;
+    font-weight: inherit;
+    width: 90%;
+
+	@mixin atM {
+		font-size: $textL;
+	}
+}
+
+button#searchsubmit {
+    display: inline-block;
+    background-color: transparent;
+    background: none;
+    color: $white;
+    border: 0;
+    outline: 0;
+    font-size: $textS;
+}

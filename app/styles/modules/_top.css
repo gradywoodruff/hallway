@@ -1,0 +1,25 @@
+.top {
+	z-index: 2;
+	position: fixed;
+	top: 0.9rem;
+	right: 0.9rem;
+	font-size: $textS;
+
+	&:hover {
+		cursor: pointer;
+	}
+
+	& i {    
+		display: block;
+		color: $black;
+	    width: 3rem;
+	    text-align: right;
+	    margin-bottom: 0.45rem;
+	}
+	&--question {
+		cursor: help;
+	}
+	&--search {
+		cursor: zoom-in;
+	}
+}

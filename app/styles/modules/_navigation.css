@@ -1,0 +1,31 @@
+.navigation {
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+	font-size: $textS;
+	padding: 2.7rem $indent;
+	background-color: $black;
+
+	&--prev {
+		& a:hover {
+			cursor: w-resize;
+		}
+	}
+	&--grid {
+		& a:hover {
+			cursor: context-menu;
+		}
+	}
+	&--next {
+		& a:hover {
+			cursor: e-resize;
+		}
+	}
+
+	&--search {
+		margin: 0 auto;
+		& a:hover {
+			cursor: context-menu;
+		}
+	}
+}

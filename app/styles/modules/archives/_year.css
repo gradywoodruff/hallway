@@ -1,0 +1,57 @@
+.archive {
+
+	&__month {
+	    height: 11.7rem;
+	    margin-bottom: 4.5rem;
+	    background-color: $black;
+
+		@mixin atS {
+	    	height: 18rem;
+	    	margin-bottom: 9rem;
+		}
+		@mixin atM {
+	    	height: 22.5rem;
+	    	margin-bottom: 9rem;
+		}
+		@mixin atL {
+	    	height: 27rem;
+	    	margin-bottom: 12.5rem;
+		}
+
+		&__wrap {
+		    width: 100%;
+		    height: 100%;
+		    position:relative;
+		    overflow: hidden;
+		}
+	}
+
+	&__title {
+	    position: absolute;
+	    font-size: $textL;
+	    line-height: 0.9;
+	    font-style: normal;
+	    left: 0.9rem;
+	    top: 50%;
+		max-width: 45%;
+	    transform: translateY(-50%);
+
+		@mixin atS {
+			width: 100%;
+		}
+
+		@mixin atM {
+			font-size: $textXl;
+			width: 100%;
+		}
+	}
+
+	&__background {
+		float:left;
+		background-position: center center;
+		background-size: cover;
+	}
+
+}
+
+.archive__month__wrap.archive__month__wrap--1 .archive__background{width:100%;height:100%}.archive__month__wrap.archive__month__wrap--2 .archive__background{width:100%;height:50%}.archive__month__wrap.archive__month__wrap--3 .archive__background{width:50%;height:50%}.archive__month__wrap.archive__month__wrap--3 .archive__background:nth-child(2){width:50%;height:100%}.archive__month__wrap.archive__month__wrap--4 .archive__background{width:50%;height:50%}.archive__month__wrap.archive__month__wrap--5 .archive__background{width:50%;height:33.33333333%}.archive__month__wrap.archive__month__wrap--5 .archive__background:nth-child(4){width:50%;height:66.666666666%}.archive__month__wrap.archive__month__wrap--6 .archive__background{width:50%;height:33.33333333333%}.archive__month__wrap.archive__month__wrap--7 .archive__background{width:33.333333333%;height:33.33333333333%}.archive__month__wrap.archive__month__wrap--7 .archive__background:nth-child(2){width:33.333333333%;height:100%}.archive__month__wrap.archive__month__wrap--8 .archive__background{width:50%;height:25%}.archive__month__wrap.archive__month__wrap--9 .archive__background{width:33.33333333%;height:33.3333333333%}.archive__month__wrap.archive__month__wrap--10 .archive__background{width:25%;height:33.33333333%}.archive__month__wrap.archive__month__wrap--10 .archive__background:nth-child(6),.archive__month__wrap.archive__month__wrap--10 .archive__background:nth-child(7){width:25%;height:66.666666666%}.archive__month__wrap.archive__month__wrap--11 .archive__background{width:25%;height:33.333333333%}.archive__month__wrap.archive__month__wrap--11 .archive__background:nth-child(2){width:50%;height:33.333333333%}.archive__month__wrap.archive__month__wrap--12 .archive__background{width:25%;height:33.33333333333%}.archive__month__wrap.archive__month__wrap--13 .archive__background{float:right;width:25%;height:25%}.archive__month__wrap.archive__month__wrap--13 .archive__background:nth-child(2),.archive__month__wrap.archive__month__wrap--13 .archive__background:nth-child(3),.archive__month__wrap.archive__month__wrap--13 .archive__background:nth-child(8){width:25%;height:50%}.archive__month__wrap.archive__month__wrap--14 .archive__background{width:25%;height:25%}.archive__month__wrap.archive__month__wrap--14 .archive__background:nth-child(2),.archive__month__wrap.archive__month__wrap--14 .archive__background:nth-child(9){width:25%;height:50%}.archive__month__wrap.archive__month__wrap--15 .archive__background{width:25%;height:25%}.archive__month__wrap.archive__month__wrap--15 .archive__background:nth-child(2){float:right;width:50%;height:25%}.archive__month__wrap.archive__month__wrap--16 .archive__background{width:25%;height:25%}.archive__month__wrap.archive__month__wrap--17 .archive__background{width:25%;height:20%}.archive__month__wrap.archive__month__wrap--17 .archive__background:nth-child(14),.archive__month__wrap.archive__month__wrap--17 .archive__background:nth-child(15),.archive__month__wrap.archive__month__wrap--17 .archive__background:nth-child(16){width:25%;height:40%}.archive__month__wrap.archive__month__wrap--18 .archive__background{width:25%;height:20%}.archive__month__wrap.archive__month__wrap--18 .archive__background:nth-child(14),.archive__month__wrap.archive__month__wrap--18 .archive__background:nth-child(15){float:right;width:25%;height:40%}.archive__month__wrap.archive__month__wrap--19 .archive__background{width:25%;height:20%}.archive__month__wrap.archive__month__wrap--19 .archive__background:nth-child(14){width:25%;height:40%}.archive__month__wrap.archive__month__wrap--20 .archive__background{width:20%;height:25%}.archive__month__wrap.archive__month__wrap--21 .archive__background{float:right;width:20%;height:20%}.archive__month__wrap.archive__month__wrap--21 .archive__background:nth-child(8){width:40%;height:20%}.archive__month__wrap.archive__month__wrap--21 .archive__background:nth-child(2){width:20%;height:100%;clear:both}.archive__month__wrap.archive__month__wrap--22 .archive__background{width:20%;height:20%}.archive__month__wrap.archive__month__wrap--22 .archive__background:nth-child(2){width:80%;height:20%}.archive__month__wrap.archive__month__wrap--23 .archive__background{float:right;width:20%;height:20%}.archive__month__wrap.archive__month__wrap--23 .archive__background:nth-child(2){width:60%;height:20%}.archive__month__wrap.archive__month__wrap--24 .archive__background{width:20%;height:20%}.archive__month__wrap.archive__month__wrap--24 .archive__background:nth-child(2){width:40%;height:20%}.archive__month__wrap.archive__month__wrap--25 .archive__background{width:20%;height:20%}.archive__month__wrap.archive__month__wrap--26 .archive__background{width:20%;height:16.66666666%}.archive__month__wrap.archive__month__wrap--26 .archive__background:nth-child(16),.archive__month__wrap.archive__month__wrap--26 .archive__background:nth-child(2),.archive__month__wrap.archive__month__wrap--26 .archive__background:nth-child(26),.archive__month__wrap.archive__month__wrap--26 .archive__background:nth-child(8){width:40%;height:16.66666666%}.archive__month__wrap.archive__month__wrap--27 .archive__background{float:right;width:20%;height:16.66666666%}.archive__month__wrap.archive__month__wrap--27 .archive__background:nth-child(15),.archive__month__wrap.archive__month__wrap--27 .archive__background:nth-child(2),.archive__month__wrap.archive__month__wrap--27 .archive__background:nth-child(8){width:40%;height:16.66666666%}.archive__month__wrap.archive__month__wrap--28 .archive__background{width:20%;height:16.66666666%}.archive__month__wrap.archive__month__wrap--28 .archive__background:nth-child(14),.archive__month__wrap.archive__month__wrap--28 .archive__background:nth-child(3){width:40%;height:16.66666666%}.archive__month__wrap.archive__month__wrap--29 .archive__background{width:20%;height:16.66666666%}.archive__month__wrap.archive__month__wrap--29 .archive__background:nth-child(30){width:40%;height:16.66666666%}.archive__month__wrap.archive__month__wrap--30 .archive__background,.archive__month__wrap.archive__month__wrap--31 .archive__background,.archive__month__wrap.archive__month__wrap--32 .archive__background,.archive__month__wrap.archive__month__wrap--33 .archive__background,.archive__month__wrap.archive__month__wrap--34 .archive__background,.archive__month__wrap.archive__month__wrap--35 .archive__background,.archive__month__wrap.archive__month__wrap--36 .archive__background,.archive__month__wrap.archive__month__wrap--37 .archive__background,.archive__month__wrap.archive__month__wrap--38 .archive__background,.archive__month__wrap.archive__month__wrap--39 .archive__background,.archive__month__wrap.archive__month__wrap--40 .archive__background,.archive__month__wrap.archive__month__wrap--41 .archive__background,.archive__month__wrap.archive__month__wrap--42 .archive__background,.archive__month__wrap.archive__month__wrap--43 .archive__background,.archive__month__wrap.archive__month__wrap--44 .archive__background,.archive__month__wrap.archive__month__wrap--45 .archive__background{width:20%;height:16.66666666%}

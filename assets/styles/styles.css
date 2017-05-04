@@ -1,0 +1,1142 @@
+/*
+Theme Name: HALLWAYv3
+Version: 3.0
+Author: J Grady Woodruff IV
+*/
+/*! normalize.css v6.0.0 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in
+ *    IE on Windows Phone and in iOS.
+ */
+html {
+  line-height: 1.15; /* 1 */
+  -ms-text-size-adjust: 100%; /* 2 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+/* Sections
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block;
+}
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+/* Grouping content
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in IE.
+ */
+figcaption,
+figure,
+main { /* 1 */
+  display: block;
+}
+/**
+ * Add the correct margin in IE 8.
+ */
+figure {
+  margin: 1em 40px;
+}
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */
+a {
+  background-color: transparent; /* 1 */
+  -webkit-text-decoration-skip: objects; /* 2 */
+}
+/**
+ * 1. Remove the bottom border in Chrome 57- and Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
+}
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ */
+b,
+strong {
+  font-weight: inherit;
+}
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+/**
+ * Add the correct font style in Android 4.3-.
+ */
+dfn {
+  font-style: italic;
+}
+/**
+ * Add the correct background and color in IE 9-.
+ */
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sub {
+  bottom: -0.25em;
+}
+sup {
+  top: -0.5em;
+}
+/* Embedded content
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+audio,
+video {
+  display: inline-block;
+}
+/**
+ * Add the correct display in iOS 4-7.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+img {
+  border-style: none;
+}
+/**
+ * Hide the overflow in IE.
+ */
+svg:not(:root) {
+  overflow: hidden;
+}
+/* Forms
+   ========================================================================== */
+/**
+ * Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  margin: 0;
+}
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input { /* 1 */
+  overflow: visible;
+}
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select { /* 1 */
+  text-transform: none;
+}
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+html [type="button"], /* 1 */
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button; /* 2 */
+}
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+/**
+ * 1. Add the correct display in IE 9-.
+ * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  display: inline-block; /* 1 */
+  vertical-align: baseline; /* 2 */
+}
+/**
+ * Remove the default vertical scrollbar in IE.
+ */
+textarea {
+  overflow: auto;
+}
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+/**
+ * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
+ */
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ */
+details, /* 1 */
+menu {
+  display: block;
+}
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+/* Scripting
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+canvas {
+  display: inline-block;
+}
+/**
+ * Add the correct display in IE.
+ */
+template {
+  display: none;
+}
+/* Hidden
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10-.
+ */
+[hidden] {
+  display: none;
+}
+@font-face {
+  font-family: 'Gotham';
+  src: url('../fonts/gotham/Gotham-Medium.eot');
+  src: url('../fonts/gotham/Gotham-Medium.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/gotham/Gotham-Medium.woff2') format('woff2'),
+    url('../fonts/gotham/Gotham-Medium.woff') format('woff'),
+    url('../fonts/gotham/Gotham-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Gotham';
+  src: url('../fonts/gotham/Gotham-MediumItalic.eot');
+  src: url('../fonts/gotham/Gotham-MediumItalic.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/gotham/Gotham-MediumItalic.woff2') format('woff2'),
+    url('../fonts/gotham/Gotham-MediumItalic.woff') format('woff'),
+    url('../fonts/gotham/Gotham-MediumItalic.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Gotham';
+  src: url('../fonts/gotham/Gotham-Black.eot');
+  src: url('../fonts/gotham/Gotham-Black.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/gotham/Gotham-Black.woff2') format('woff2'),
+    url('../fonts/gotham/Gotham-Black.woff') format('woff'),
+    url('../fonts/gotham/Gotham-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Gotham';
+  src: url('../fonts/gotham/Gotham-BlackItalic.eot');
+  src: url('../fonts/gotham/Gotham-BlackItalic.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/gotham/Gotham-BlackItalic.woff2') format('woff2'),
+    url('../fonts/gotham/Gotham-BlackItalic.woff') format('woff'),
+    url('../fonts/gotham/Gotham-BlackItalic.ttf') format('truetype');
+  font-weight: 900;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'SSSocialRegular';
+  src: url('../fonts/ss/ss-social-regular.eot');
+  src: url('../fonts/ss/ss-social-regular.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/ss/ss-social-regular.woff') format('woff'),
+       url('../fonts/ss/ss-social-regular.ttf')  format('truetype'),
+       url('../fonts/ss/ss-social-regular.svg#SSSocialRegular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'SSStandard';
+  src: url('../fonts/ss/ss-standard.eot');
+  src: url('../fonts/ss/ss-standard.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/ss/ss-standard.woff') format('woff'),
+       url('../fonts/ss/ss-standard.ttf')  format('truetype'),
+       url('../fonts/ss/ss-standard.svg#SSStandard') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+html {
+	font-family: Gotham;
+	font-weight: 900;
+	height: 100%;
+	background-color: #FFFFFF;
+	overflow-x: hidden;
+	width: 100%;
+	letter-spacing: 1.08;
+}
+body {
+	color: #000000;
+	line-height:1.5;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	min-height: 100%;
+	max-width: 100%;
+	width: 100%;
+	overflow-x: hidden;
+}
+body.bump,
+body.modal,
+body.searching {
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+a {
+	text-decoration: none;
+    background-color: #000000;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-style: italic;
+}
+a ::-moz-selection {
+  background-color: #000000;
+  background: #000000;
+  color: #FFE2CB
+}
+a ::selection {
+  background-color: #000000;
+  background: #000000;
+  color: #FFE2CB
+}
+:focus {outline:none;}
+::-moz-selection {
+  color: #ffffff;
+  background-color: #FFE2CC;
+  background: #FFE2CC;
+}
+::selection {
+  color: #ffffff;
+  background-color: #FFE2CC;
+  background: #FFE2CC; 
+}
+.noselect {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+.noselect ::-moz-selection {
+  background: transparent;
+}
+.noselect ::selection {
+  background: transparent;
+}
+.noselect ::-moz-selection {
+  background: transparent;
+}
+.noselect .select {
+  -webkit-touch-callout: text;
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
+}
+.wrap {
+	margin: 0 auto;
+	width: 100%;
+	padding: 0.9rem;
+    box-sizing: border-box;
+}
+.wrap p {
+  margin: 1.5rem 0;
+}
+@media (min-width: 45rem) {
+  .wrap {
+    width: 45rem;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+@media (min-width: 63rem) {
+  .wrap {
+    width: 54rem;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+.wrap--top-pad {
+  padding-top: 9rem;
+}
+.wrap--full {
+	margin: 0 auto;
+	overflow-x: hidden;
+	width: 100%;
+}
+body.bump .fadein {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .999s ease-out, visibility .999s ease-out;
+}
+.fadein {
+	opacity: 1;
+	visibility: visible;
+	transition: opacity .999s ease-out, visibility .999s ease-out;
+}
+body.bump .bumper {
+  opacity: 1;
+  visibility: visible;
+}
+.bumper {
+	opacity: 0;
+	visibility: hidden;
+	
+	position: fixed;
+	background-color: #FFFFFF;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	z-index: 4;
+	cursor: default;
+}
+.bumper__message {
+  padding-left: 1.8rem;
+  position: absolute;
+  color: #FFFFFF;
+  text-transform:uppercase;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-size: 4.5rem;
+  width: 63%;
+}
+@media (min-width: 36rem) {
+  .bumper__message {
+    font-size: 9rem;
+    width: 81%;
+  }
+}
+@media (min-width: 45rem) {
+  .bumper__message {
+    font-size: 9rem;
+    width: 100%;
+  }
+}
+.bumper__message--1,
+    .bumper__message--2 {
+  max-width: 90%;
+  line-height: 1;
+}
+.bumper__message--1 {
+  display: none;
+}
+.bumper__message--1--guest {
+  font-size: 2.25rem;
+}
+@media (min-width: 63rem) {
+  .bumper__message--1--guest {
+    font-size: 9rem;
+  }
+}
+.bumper__message--2 {
+  display: none;
+  font-size: 2.25rem;
+}
+@media (min-width: 45rem) {
+  .bumper__message--2 {
+    font-size: 4.5rem;
+  }
+}
+@media (min-width: 63rem) {
+  .bumper__message--2 {
+    font-size: 9rem;
+  }
+}
+.bumper--image {
+	z-index: 1;
+	position: fixed;
+	background-color: #FFFFFF;
+	top: 25%;
+	bottom: 25%;
+	right: 0;
+	left: 0;
+	background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+body.intro.message--2 .bumper__message--2 {
+	display: block;
+}
+body.message--logo .bumper__message--1 {
+	display: block;
+}
+body.intro.message--1 .bumper__message--1 {
+	display: block;
+}
+body.message--2.message--logo .bumper__message--2 {
+	display: none;
+}
+.find {
+	padding-right: 0.72rem;
+	font-size: 2.25rem;
+	line-height: 1.2; 
+	margin-bottom: 4.5rem;
+	text-indent: 0;
+}
+@media (min-width: 36rem) {
+  .find {
+    font-size: 4.5rem;
+  }
+}
+.find.find--expanded {
+  margin-right: 0;
+}
+.find__name {
+  padding-left: 0.72rem;
+  padding-right: 0.72rem;
+}
+@media (min-width: 36rem) {
+  .find__name {
+    padding-right: 0;
+  }
+}
+.find__name:hover {
+  cursor: alias;
+}
+.find__context {
+  margin-left: 0.72rem;
+  display:none;
+}
+.find__context-button {
+  font-size: 1.44rem;
+  margin: 0.9rem 0;
+  display: block;
+}
+@media (min-width: 36rem) {
+  .find__context-button {
+    display: inline;
+    margin: 0 0.9rem;
+  }
+}
+.find__context-button:hover {
+  cursor: pointer;
+}
+.find--expanded .find__context {
+  display: block;
+  margin-left: 0;
+}
+@media (min-width: 36rem) {
+  .find--expanded .find__context {
+    display: inline;
+    margin: 0 0.9rem;
+  }
+}
+.find--expanded .find__context-button {
+  display: none;
+}
+.find--expanded .find__name {
+  padding-right: 0.72rem;
+}
+@media (min-width: 36rem) {
+  .find--expanded .find__name {
+    padding-right: 0;
+  }
+}
+footer {
+	background-color: #000000;
+}
+footer::before {
+  margin-top: 3.6rem;
+}
+.footer--top-pad {
+  margin-top: 0;
+}
+@media (min-width: 36rem) {
+  .footer {
+    margin-top: 1.8rem;
+  }
+}
+@media (min-width: 45rem) {
+  .footer {
+    margin-top: 4.5rem;
+  }
+}
+@media (min-width: 63rem) {
+  .footer {
+    margin-top: 9rem;
+  }
+}
+.footer__links {
+  margin: 0 0;
+  font-size: 1.44rem;
+  line-height: 2.7;
+}
+.footer__links ul {
+  padding: 0;
+  padding-bottom: 2.7rem;
+  margin: 0;
+}
+.navigation {
+	list-style: none;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	font-size: 1.44rem;
+	padding: 2.7rem 0;
+	background-color: #000000;
+}
+.navigation--prev a:hover {
+  cursor: w-resize;
+}
+.navigation--grid a:hover {
+  cursor: context-menu;
+}
+.navigation--next a:hover {
+  cursor: e-resize;
+}
+.navigation--search {
+  margin: 0 auto;
+}
+.navigation--search a:hover {
+  cursor: context-menu;
+}
+.question {
+	position: fixed;
+	z-index: 3;
+	background-color: #FFE2CB;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	opacity: 0;
+	visibility: hidden;
+	color: #FFFFFF;
+	transition: opacity .333s ease-out, visibility .333s ease-out;
+
+}
+.question--is-visible {
+  opacity: 1;
+  visibility: visible;
+}
+.question__inner {
+  font-size: 4.5rem;
+  line-height: 1;
+  padding-left: 1rem;
+  text-transform: uppercase;
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.question__close {
+  position: fixed;
+  top: 0.9rem;
+  right: 0.9rem;
+  font-size: 1.44rem;
+  display: block;
+  color: #FFFFFF;
+  width: 3rem;
+  text-align: right;
+  margin-bottom: 0.45rem;
+}
+.question__close:hover {
+  cursor: pointer;
+}
+.searchform {
+	position: fixed;
+	z-index: 5;
+	background-color: #000000;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	opacity: 0;
+	visibility: hidden;
+	color: #FFFFFF;
+	transition: opacity .333s ease-out, visibility .333s ease-out;
+
+}
+.searchform--is-visible {
+  opacity: 1;
+  visibility: visible;
+}
+.searchform__inner {
+  font-size: 4.5rem;
+  line-height: 1;
+  padding-left: 1rem;
+  text-transform: uppercase;
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.searchform__close {
+  position: fixed;
+  top: 0.9rem;
+  right: 0.9rem;
+  font-size: 1.44rem;
+  display: block;
+  color: #FFFFFF;
+  width: 3rem;
+  text-align: right;
+  margin-bottom: 0.45rem;
+}
+.searchform__close:hover {
+  cursor: pointer;
+}
+.searchform ::-moz-selection {
+  background-color: #000000;
+  background: #000000;
+  color: #FFE2CB;
+}
+.searchform ::selection {
+  background-color: #000000;
+  background: #000000;
+  color: #FFE2CB;
+}
+input#s {
+    background: none;
+    border: none;
+    color: #FFFFFF;
+    font-size: 2.25rem;
+    text-transform: uppercase;
+    font-family: inherit;
+    font-weight: inherit;
+    width: 90%;
+}
+@media (min-width: 45rem) {
+  input#s {
+    font-size: 4.5rem;
+  }
+}
+button#searchsubmit {
+    display: inline-block;
+    background-color: transparent;
+    background: none;
+    color: #FFFFFF;
+    border: 0;
+    outline: 0;
+    font-size: 1.44rem;
+}
+.title {
+	padding-left: 0;
+	margin-bottom: 1.8rem;
+	text-transform: uppercase;
+
+}
+.title:hover {
+  cursor: default;
+}
+.title__logo {
+  width: 3.33rem;
+  height: 3.33rem;
+  display: inline-block;
+}
+.title__logo--on,
+	.title__logo--off,
+	.title__logo--dark {
+  background-size: 3.33rem 3.33rem;
+  width: 3.33rem;
+  height: 3.33rem;
+  position: absolute;
+}
+.title__logo--on {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .9s ease-out, visibility .9s ease-out;
+}
+.title__logo--dark {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .333s ease-out, visibility .333s ease-out;
+}
+.title__logo.finding .title__logo--on {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity .0s ease-out, visibility .9s ease-out;
+}
+.title__logo.searching .title__logo--dark {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity .333s ease-out, visibility .333s ease-out;
+}
+.title__copy {
+  display: inline;
+  vertical-align: top;
+  font-size: 1.44rem;
+}
+.top {
+	z-index: 2;
+	position: fixed;
+	top: 0.9rem;
+	right: 0.9rem;
+	font-size: 1.44rem;
+}
+.top:hover {
+  cursor: pointer;
+}
+.top i {
+  display: block;
+  color: #000000;
+  width: 3rem;
+  text-align: right;
+  margin-bottom: 0.45rem;
+}
+.top--question {
+  cursor: help;
+}
+.top--search {
+  cursor: zoom-in;
+}
+.month__box {
+  height: 5.4rem;
+  width: 100%;
+  background-color: #000000;
+  color: #FFFFFF;
+  font-style:normal;
+  text-align: center;
+  position:relative;
+  overflow:hidden;
+  float:left;
+  margin: 1.8rem 0;
+  background-position: center center;
+  background-size: cover;
+}
+.month__box:hover {
+  background-image:none;
+}
+.month__box:hover .month__box--hover {
+  height: 100%;
+  width: 100%;
+  background-position: center center;
+  background-size: cover;
+}
+@media (min-width: 36rem) {
+  .month__box {
+    width: 50%;
+    height: 7.2rem;
+    margin: 3rem 0;
+  }
+}
+@media (min-width: 63rem) {
+  .month__box {
+    width: 33.3333333333333%;
+    margin: 3rem 0;
+  }
+}
+@media (min-width: 72rem) {
+  .month__box {
+    width: 25%;
+    margin: 3rem 0;
+  }
+}
+.month__title {
+  position: absolute;
+  font-size: 4.5rem;
+  left: 0.9rem;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.search__box {
+  height: 5.4rem;
+  width: 100%;
+  background-color: #000000;
+  color: #FFFFFF;
+  font-style:normal;
+  text-align: center;
+  position:relative;
+  overflow:hidden;
+  float:left;
+  margin: 1.8rem 0;
+  background-position: center center;
+  background-size: cover;
+}
+.search__box:hover {
+  background-image:none;
+}
+.search__box:hover .search__box--hover {
+  height: 100%;
+  width: 100%;
+  background-position: center center;
+  background-size: cover;
+}
+@media (min-width: 36rem) {
+  .search__box {
+    width: 50%;
+    height: 7.2rem;
+    margin: 3rem 0;
+  }
+}
+@media (min-width: 63rem) {
+  .search__box {
+    width: 33.3333333333333%;
+    margin: 3rem 0;
+  }
+}
+@media (min-width: 72rem) {
+  .search__box {
+    width: 25%;
+    margin: 3rem 0;
+  }
+}
+.search__title {
+  position: absolute;
+  font-size: 1.44rem;
+  left: 0.9rem;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.archive__month {
+  height: 11.7rem;
+  margin-bottom: 4.5rem;
+  background-color: #000000;
+}
+@media (min-width: 36rem) {
+  .archive__month {
+    height: 18rem;
+    margin-bottom: 9rem;
+  }
+}
+@media (min-width: 45rem) {
+  .archive__month {
+    height: 22.5rem;
+    margin-bottom: 9rem;
+  }
+}
+@media (min-width: 63rem) {
+  .archive__month {
+    height: 27rem;
+    margin-bottom: 12.5rem;
+  }
+}
+.archive__month__wrap {
+  width: 100%;
+  height: 100%;
+  position:relative;
+  overflow: hidden;
+}
+.archive__title {
+  position: absolute;
+  font-size: 4.5rem;
+  line-height: 0.9;
+  font-style: normal;
+  left: 0.9rem;
+  top: 50%;
+  max-width: 45%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+@media (min-width: 36rem) {
+  .archive__title {
+    width: 100%;
+  }
+}
+@media (min-width: 45rem) {
+  .archive__title {
+    font-size: 9rem;
+    width: 100%;
+  }
+}
+.archive__background {
+  float:left;
+  background-position: center center;
+  background-size: cover;
+}
+.archive__month__wrap.archive__month__wrap--1 .archive__background{width:100%;height:100%}
+.archive__month__wrap.archive__month__wrap--2 .archive__background{width:100%;height:50%}
+.archive__month__wrap.archive__month__wrap--3 .archive__background{width:50%;height:50%}
+.archive__month__wrap.archive__month__wrap--3 .archive__background:nth-child(2){width:50%;height:100%}
+.archive__month__wrap.archive__month__wrap--4 .archive__background{width:50%;height:50%}
+.archive__month__wrap.archive__month__wrap--5 .archive__background{width:50%;height:33.33333333%}
+.archive__month__wrap.archive__month__wrap--5 .archive__background:nth-child(4){width:50%;height:66.666666666%}
+.archive__month__wrap.archive__month__wrap--6 .archive__background{width:50%;height:33.33333333333%}
+.archive__month__wrap.archive__month__wrap--7 .archive__background{width:33.333333333%;height:33.33333333333%}
+.archive__month__wrap.archive__month__wrap--7 .archive__background:nth-child(2){width:33.333333333%;height:100%}
+.archive__month__wrap.archive__month__wrap--8 .archive__background{width:50%;height:25%}
+.archive__month__wrap.archive__month__wrap--9 .archive__background{width:33.33333333%;height:33.3333333333%}
+.archive__month__wrap.archive__month__wrap--10 .archive__background{width:25%;height:33.33333333%}
+.archive__month__wrap.archive__month__wrap--10 .archive__background:nth-child(6),.archive__month__wrap.archive__month__wrap--10 .archive__background:nth-child(7){width:25%;height:66.666666666%}
+.archive__month__wrap.archive__month__wrap--11 .archive__background{width:25%;height:33.333333333%}
+.archive__month__wrap.archive__month__wrap--11 .archive__background:nth-child(2){width:50%;height:33.333333333%}
+.archive__month__wrap.archive__month__wrap--12 .archive__background{width:25%;height:33.33333333333%}
+.archive__month__wrap.archive__month__wrap--13 .archive__background{float:right;width:25%;height:25%}
+.archive__month__wrap.archive__month__wrap--13 .archive__background:nth-child(2),.archive__month__wrap.archive__month__wrap--13 .archive__background:nth-child(3),.archive__month__wrap.archive__month__wrap--13 .archive__background:nth-child(8){width:25%;height:50%}
+.archive__month__wrap.archive__month__wrap--14 .archive__background{width:25%;height:25%}
+.archive__month__wrap.archive__month__wrap--14 .archive__background:nth-child(2),.archive__month__wrap.archive__month__wrap--14 .archive__background:nth-child(9){width:25%;height:50%}
+.archive__month__wrap.archive__month__wrap--15 .archive__background{width:25%;height:25%}
+.archive__month__wrap.archive__month__wrap--15 .archive__background:nth-child(2){float:right;width:50%;height:25%}
+.archive__month__wrap.archive__month__wrap--16 .archive__background{width:25%;height:25%}
+.archive__month__wrap.archive__month__wrap--17 .archive__background{width:25%;height:20%}
+.archive__month__wrap.archive__month__wrap--17 .archive__background:nth-child(14),.archive__month__wrap.archive__month__wrap--17 .archive__background:nth-child(15),.archive__month__wrap.archive__month__wrap--17 .archive__background:nth-child(16){width:25%;height:40%}
+.archive__month__wrap.archive__month__wrap--18 .archive__background{width:25%;height:20%}
+.archive__month__wrap.archive__month__wrap--18 .archive__background:nth-child(14),.archive__month__wrap.archive__month__wrap--18 .archive__background:nth-child(15){float:right;width:25%;height:40%}
+.archive__month__wrap.archive__month__wrap--19 .archive__background{width:25%;height:20%}
+.archive__month__wrap.archive__month__wrap--19 .archive__background:nth-child(14){width:25%;height:40%}
+.archive__month__wrap.archive__month__wrap--20 .archive__background{width:20%;height:25%}
+.archive__month__wrap.archive__month__wrap--21 .archive__background{float:right;width:20%;height:20%}
+.archive__month__wrap.archive__month__wrap--21 .archive__background:nth-child(8){width:40%;height:20%}
+.archive__month__wrap.archive__month__wrap--21 .archive__background:nth-child(2){width:20%;height:100%;clear:both}
+.archive__month__wrap.archive__month__wrap--22 .archive__background{width:20%;height:20%}
+.archive__month__wrap.archive__month__wrap--22 .archive__background:nth-child(2){width:80%;height:20%}
+.archive__month__wrap.archive__month__wrap--23 .archive__background{float:right;width:20%;height:20%}
+.archive__month__wrap.archive__month__wrap--23 .archive__background:nth-child(2){width:60%;height:20%}
+.archive__month__wrap.archive__month__wrap--24 .archive__background{width:20%;height:20%}
+.archive__month__wrap.archive__month__wrap--24 .archive__background:nth-child(2){width:40%;height:20%}
+.archive__month__wrap.archive__month__wrap--25 .archive__background{width:20%;height:20%}
+.archive__month__wrap.archive__month__wrap--26 .archive__background{width:20%;height:16.66666666%}
+.archive__month__wrap.archive__month__wrap--26 .archive__background:nth-child(16),.archive__month__wrap.archive__month__wrap--26 .archive__background:nth-child(2),.archive__month__wrap.archive__month__wrap--26 .archive__background:nth-child(26),.archive__month__wrap.archive__month__wrap--26 .archive__background:nth-child(8){width:40%;height:16.66666666%}
+.archive__month__wrap.archive__month__wrap--27 .archive__background{float:right;width:20%;height:16.66666666%}
+.archive__month__wrap.archive__month__wrap--27 .archive__background:nth-child(15),.archive__month__wrap.archive__month__wrap--27 .archive__background:nth-child(2),.archive__month__wrap.archive__month__wrap--27 .archive__background:nth-child(8){width:40%;height:16.66666666%}
+.archive__month__wrap.archive__month__wrap--28 .archive__background{width:20%;height:16.66666666%}
+.archive__month__wrap.archive__month__wrap--28 .archive__background:nth-child(14),.archive__month__wrap.archive__month__wrap--28 .archive__background:nth-child(3){width:40%;height:16.66666666%}
+.archive__month__wrap.archive__month__wrap--29 .archive__background{width:20%;height:16.66666666%}
+.archive__month__wrap.archive__month__wrap--29 .archive__background:nth-child(30){width:40%;height:16.66666666%}
+.archive__month__wrap.archive__month__wrap--30 .archive__background,.archive__month__wrap.archive__month__wrap--31 .archive__background,.archive__month__wrap.archive__month__wrap--32 .archive__background,.archive__month__wrap.archive__month__wrap--33 .archive__background,.archive__month__wrap.archive__month__wrap--34 .archive__background,.archive__month__wrap.archive__month__wrap--35 .archive__background,.archive__month__wrap.archive__month__wrap--36 .archive__background,.archive__month__wrap.archive__month__wrap--37 .archive__background,.archive__month__wrap.archive__month__wrap--38 .archive__background,.archive__month__wrap.archive__month__wrap--39 .archive__background,.archive__month__wrap.archive__month__wrap--40 .archive__background,.archive__month__wrap.archive__month__wrap--41 .archive__background,.archive__month__wrap.archive__month__wrap--42 .archive__background,.archive__month__wrap.archive__month__wrap--43 .archive__background,.archive__month__wrap.archive__month__wrap--44 .archive__background,.archive__month__wrap.archive__month__wrap--45 .archive__background{width:20%;height:16.66666666%}

@@ -1,0 +1,36 @@
+@define-mixin atXs {
+	@media (min-width: 27rem) {
+		@mixin-content;
+	}
+}
+@define-mixin atS {
+	@media (min-width: 36rem) {
+		@mixin-content;
+	}
+}
+
+@define-mixin atM {
+	@media (min-width: 45rem) {
+		@mixin-content;
+	}
+}
+
+@define-mixin atL {
+	@media (min-width: 63rem) {
+		@mixin-content;
+	}
+}
+
+@define-mixin atXl {
+	@media (min-width: 72rem) {
+		@mixin-content;
+	}
+}
+
+@define-mixin clearfix {
+	&::after {
+		content:"";
+		clear:both;
+		display:table;
+	}
+}

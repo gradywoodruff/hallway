@@ -1,0 +1,92 @@
+body.bump {
+	& .bumper {
+		opacity: 1;
+		visibility: visible;
+	}
+}
+.bumper {
+	opacity: 0;
+	visibility: hidden;
+	
+	position: fixed;
+	background-color: $white;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	z-index: 4;
+	cursor: default;
+
+    &__message {
+    	padding-left: 1.8rem;
+		position: absolute;
+		color: $white;
+		text-transform:uppercase;
+		top: 50%;
+		transform: translateY(-50%);
+		font-size: $textL;
+		width: 63%;
+
+		@mixin atS {
+			font-size:$textXl;
+			width: 81%;
+		}
+		@mixin atM {
+			font-size:$textXl;
+			width: 100%;
+		}
+    }
+    &__message--1,
+    &__message--2 {
+		max-width: 90%;
+    	line-height: 1;
+    }
+    &__message--1 {
+		display: none;
+
+		&--guest {
+			font-size: $textM;
+			
+			@mixin atL {
+				font-size: $textXl;
+			}
+
+		}
+    }
+    &__message--2 {
+		display: none;
+		font-size: $textM;
+
+		@mixin atM {
+			font-size: $textL;
+		}
+		@mixin atL {
+			font-size: $textXl;
+		}
+    }
+}
+.bumper--image {
+	z-index: 1;
+	position: fixed;
+	background-color: $white;
+	top: 25%;
+	bottom: 25%;
+	right: 0;
+	left: 0;
+	background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+body.intro.message--2 .bumper__message--2 {
+	display: block;
+}
+body.message--logo .bumper__message--1 {
+	display: block;
+}
+body.intro.message--1 .bumper__message--1 {
+	display: block;
+}
+body.message--2.message--logo .bumper__message--2 {
+	display: none;
+}

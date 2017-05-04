@@ -1,0 +1,50 @@
+.title {
+	padding-left: $indent;
+	margin-bottom: 1.8rem;
+	text-transform: uppercase;
+
+	&:hover {
+		cursor: default;
+	}
+
+	&__logo {
+	    width: 3.33rem;
+	    height: 3.33rem;
+	    display: inline-block;
+	}
+	&__logo--on,
+	&__logo--off,
+	&__logo--dark {
+	    background-size: 3.33rem 3.33rem;
+	    width: 3.33rem;
+	    height: 3.33rem;
+	    position: absolute;
+	}
+	&__logo--on {
+		opacity: 0;
+		visibility: hidden;
+		transition: opacity .9s ease-out, visibility .9s ease-out;
+	}
+	&__logo--dark {
+		opacity: 0;
+		visibility: hidden;
+		transition: opacity .333s ease-out, visibility .333s ease-out;
+	}
+	&__logo.finding &__logo--on {
+		opacity: 1;
+		visibility: visible;
+		transition: opacity .0s ease-out, visibility .9s ease-out;
+	}
+	&__logo.searching &__logo--dark {
+		opacity: 1;
+		visibility: visible;
+		transition: opacity .333s ease-out, visibility .333s ease-out;
+	}
+	&__copy {
+	    display: inline;
+	    vertical-align: top;
+	    font-size: $textS;
+	}
+
+} 
+
