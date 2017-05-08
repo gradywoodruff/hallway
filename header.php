@@ -5,7 +5,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
 		<title>
-			<?php if (in_category( 'guest' )) { ?>
+			<?php if (is_month()) { ?>
+				<?php echo get_the_date('M Y'); ?>
+			<?php } elseif (in_category( 'guest' ) && !is_month()) { ?>
 				<?php echo get_the_title(); ?>
 			<?php } elseif (is_day()) { ?>
 				<?php echo get_the_date(); ?>
@@ -41,7 +43,7 @@
 				bump 
 				intro 
 				page--finds
-			<?php } elseif (in_category( 'guest' )) { ?>
+			<?php } elseif (in_category( 'guest' ) && !is_month()) { ?>
 				bump 
 				intro 
 				page--finds
@@ -49,6 +51,7 @@
 				bump 
 				intro 
 				page--finds
+			<?php } else { ?>
 			<?php } ?>
 		">
 

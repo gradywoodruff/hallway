@@ -4,6 +4,7 @@
 	line-height: 1.2; 
 	margin-bottom: 4.5rem;
 	text-indent: $indent;
+	hyphens: auto;
 
 	@mixin atS {
 		font-size: $textL;

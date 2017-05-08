@@ -623,6 +623,9 @@ body.message--2.message--logo .bumper__message--2 {
 	line-height: 1.2; 
 	margin-bottom: 4.5rem;
 	text-indent: 0;
+	-webkit-hyphens: auto;
+	    -ms-hyphens: auto;
+	        hyphens: auto;
 }
 @media (min-width: 36rem) {
   .find {
@@ -934,6 +937,26 @@ button#searchsubmit {
 .top--search {
   cursor: zoom-in;
 }
+.meta {
+	padding-left: 0;
+	margin-bottom: 1.8rem;
+	text-transform: uppercase;
+	font-size: 1.44rem;
+    padding: 6px 11px 0 1px;
+
+}
+.meta__icon {
+  display: inline-block;
+  padding: 3px 9px 0 6px;
+}
+.meta__copy {
+  display: inline;
+  vertical-align: top;
+  font-size: 1.44rem;
+}
+.meta--archive  {
+  background-color: #E52D27;
+}
 .month__box {
   height: 5.4rem;
   width: 100%;
@@ -979,6 +1002,58 @@ button#searchsubmit {
 .month__title {
   position: absolute;
   font-size: 4.5rem;
+  left: 0.9rem;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.month--guest__box {
+  height: 5.4rem;
+  width: 100%;
+  background-color: #000000;
+  color: #FFFFFF;
+  font-style:normal;
+  text-align: center;
+  position:relative;
+  overflow:hidden;
+  float:left;
+  margin: 1.8rem 0;
+  background-position: center center;
+  background-size: cover;
+}
+.month--guest__box:hover {
+  background-image:none;
+}
+.month--guest__box:hover .month--guest__box--hover {
+  height: 100%;
+  width: 100%;
+  background-position: center center;
+  background-size: cover;
+}
+@media (min-width: 36rem) {
+  .month--guest__box {
+    width: 50%;
+    height: 7.2rem;
+    margin: 3rem 0;
+  }
+}
+@media (min-width: 63rem) {
+  .month--guest__box {
+    width: 33.3333333333333%;
+    margin: 3rem 0;
+  }
+}
+@media (min-width: 72rem) {
+  .month--guest__box {
+    width: 25%;
+    margin: 3rem 0;
+  }
+}
+.month--guest__title {
+  position: absolute;
+  font-size: 2.25rem;
+  line-height: 2.25rem;
+  text-align: left;
   left: 0.9rem;
   top: 50%;
   -webkit-transform: translateY(-50%);

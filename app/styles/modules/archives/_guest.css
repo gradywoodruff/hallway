@@ -1,0 +1,52 @@
+.month--guest {
+	
+	&__box {
+	    height: 5.4rem;
+	    width: 100%;
+		background-color: $black;
+		color: $white;
+		font-style:normal;
+		text-align: center;
+		position:relative;
+		overflow:hidden;
+		float:left;
+	    margin: 1.8rem 0;
+		background-position: center center;
+		background-size: cover;
+
+		&:hover {
+			background-image:none;
+		}
+		&:hover .month--guest__box--hover {
+		    height: 100%;
+		    width: 100%;
+			background-position: center center;
+			background-size: cover;
+		}
+
+		@mixin atS {
+			width: 50%;
+	    	height: 7.2rem;
+	    	margin: 3rem 0;
+		}
+		@mixin atL {
+			width: 33.3333333333333%;
+	    	margin: 3rem 0;
+		}
+		@mixin atXl {
+			width: 25%;
+	    	margin: 3rem 0;
+		}
+	}
+
+	&__title {
+	    position: absolute;
+	    font-size: $textM;
+	    line-height: $textM;
+        text-align: left;
+	    left: 0.9rem;
+	    top: 50%;
+	    transform: translateY(-50%);
+	}
+
+}

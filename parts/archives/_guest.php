@@ -5,6 +5,7 @@
 			
 				<?php get_template_part('parts/_bumper'); ?>
 				<?php get_template_part('parts/_finds'); ?>
+				<?php get_template_part('parts/_meta'); ?>
 				
 			<?php } ?>
 

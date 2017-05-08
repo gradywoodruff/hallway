@@ -15,6 +15,8 @@
 @import "modules/_searchform";
 @import "modules/_title";
 @import "modules/_top";
+@import "modules/_meta";
 @import "modules/archives/_month";
+@import "modules/archives/_guest";
 @import "modules/archives/_search";
 @import "modules/archives/_year";

@@ -51,6 +51,13 @@
 						<i class="ss-icon ss-standard">rows</i>
 				    </a>
 			    </div>
+
+			<?php } elseif (in_category( 'guest' )) { ?>
+				<div class="navigation--search">
+				    <a href="<?php echo get_permalink( get_page_by_path( 'archive' ) ); ?>" title="Finds Archive">
+						<i class="ss-icon ss-standard">rows</i>
+				    </a>
+			    </div>
 	    <?php } ?>
 	</div>
 </div>
