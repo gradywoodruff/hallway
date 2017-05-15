@@ -2,7 +2,7 @@
 
 <?php
 
-$recent_finds = wp_get_recent_posts(array('numberposts' => 1, 'post_status' => 'publish'));
+$recent_finds = wp_get_recent_posts(array('numberposts' => 1, 'post_status' => 'publish', 'category' => '1'));
 foreach( $recent_finds as $lastfind ):
 	$lastfindyear = date( 'Y', strtotime( $lastfind['post_date'] ) );
 	$lastfindmonth = date( 'm', strtotime( $lastfind['post_date'] ) );
