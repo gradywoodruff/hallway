@@ -1,13 +1,12 @@
 html.wp-toolbar {
 	padding-top: 0;
 }
-body.wp-admin {
-	font-family: gotham;
-	background-color: #fff;
-}
-#wpadminbar {
-	display: none;
-}
+// #wpadminbar {
+// 	display: none;
+// }
 .menu-icon-dashboard {
 	display: none!important;
+}
+#wp-content-editor-tools {
+    background-color: transparent;
 }

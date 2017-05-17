@@ -449,6 +449,7 @@ a ::selection {
   color: #FFE2CB
 }
 :focus {outline:none;}
+#preload { display: none; }
 ::-moz-selection {
   color: #ffffff;
   background-color: #FFE2CC;

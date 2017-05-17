@@ -1,10 +1,4 @@
 @import "normalize.css";
 @import "base/_global";
-@import "../styles/base/_fonts";
 @import "../styles/base/_variables";
-@import "modules/_buttons";
-@import "modules/_categories";
-@import "modules/_featuredimage";
 @import "modules/_finds";
-@import "modules/_publish";
-@import "modules/_wp";
