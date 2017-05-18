@@ -80,6 +80,44 @@ function hllwy_book_post_type () {
 } add_action('after_setup_theme', 'hllwy_book_post_type');
 
 
+function hllwy_story_post_type () {
+	$labels = array (
+		'name' => 'Stories',
+		'singular_name' => 'Story',
+		'add_new' => 'Add Story',
+		'all_items' => 'All Stories',
+		'add_new_item' => 'Add Story',
+		'edit_item' => 'Edit Story',
+		'new_item' => 'New Story',
+		'view_item' => 'View Story',
+		'search_item' => 'Search Stories',
+		'not_found' => 'No Stories Found',
+		'not_found_in_trash' => 'No Stories Found In Trash',
+		'parent_item_colon' => 'Parent Story'
+	);
+	$stories = array(
+		'labels' => $labels,
+		'public' => true,
+		'has_archive' => true,
+		'publicly_queryable' => true,
+		'query_var' => true,
+		'show_in_rest' => true,
+		'rewrite' => true,
+		'capability_type' => 'post',
+		'hierarchical' => false,
+		'supports' => array(
+			'title',
+			'editor',
+			'thumbnail',
+			'revisions',
+		),
+		'taxonomies' => array('category', 'post_tag'),
+		'menu_position' =>5,
+		'exclude_from_search' => false
+	);
+	register_post_type('stories',$stories);
+} add_action('after_setup_theme', 'hllwy_story_post_type');
+
 
 add_action( 'pre_get_posts', 'dap_remove_date_archives_pagination' );
 function dap_remove_date_archives_pagination( $query ) {

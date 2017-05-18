@@ -31,6 +31,9 @@
 				<li>
 					<a href="http://twitter.com/hllwy" target="_blank">twitter</a>
 				</li>
+				<li>
+					<a href="http://hllwy.co/spotify" target="_blank">spotify</a>
+				</li>
 			</ul>
 		</div>
 	</div>
