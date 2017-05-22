@@ -29,4 +29,10 @@
 		<?php } ?>
 	<?php } ?>
 
+<?php } else { ?>
+	<div class="find fadein">
+		<span class="find__name">
+			FINDS COMING SOON
+		</span>
+	</div>
 <?php } ?>
