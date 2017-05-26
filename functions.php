@@ -12,6 +12,7 @@ function admin_style() {
 	wp_enqueue_style('admin-styles', get_template_directory_uri().'/assets/styles/admin.css');
 } add_action('admin_enqueue_scripts', 'admin_style');
 
+
 function add_slug_body_class( $classes ) {
 	global $post;
 	if ( isset( $post ) ) {
@@ -116,6 +117,12 @@ function hllwy_story_post_type () {
 		'exclude_from_search' => false
 	);
 	register_post_type('stories',$stories);
+
+	add_filter('rest_prepare_stories', function($response) {
+	     $response->data['acf'] = get_fields($response->data['id']);
+	     return $response;
+	});
+
 } add_action('after_setup_theme', 'hllwy_story_post_type');
 
 
