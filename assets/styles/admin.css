@@ -290,4 +290,6 @@ menu {
 #acf-find_5_commentary {
     width: 45%;
     display: inline-block;
+}.acf-table > tbody > tr > td {
+    border-bottom-width: 90px;
 }
