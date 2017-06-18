@@ -1,4 +1,4 @@
-<div class="wrap wrap--top-pad fadein">
+<div class="wrap--top-pad fadein">
 	
 	<div class="title noselect padding--top">
 
