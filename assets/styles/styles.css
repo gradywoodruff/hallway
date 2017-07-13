@@ -721,6 +721,76 @@ footer::before {
   padding-bottom: 2.7rem;
   margin: 0;
 }
+.index {
+	padding-right: 0.72rem;
+	font-size: 2.25rem;
+	line-height: 1.2; 
+	margin-bottom: 4.5rem;
+	text-indent: 0;
+	-webkit-hyphens: auto;
+	    -ms-hyphens: auto;
+	        hyphens: auto;
+
+}
+@media (min-width: 36rem) {
+  .index {
+    font-size: 4.5rem;
+  }
+}
+.index__apple {
+  background-color: #FF2C54;
+}
+.index__spotify {
+  background-color: #1CD760;
+}
+.index__soundcloud {
+  background-color: #FF7700;
+}
+.index__youtube {
+  background-color: #E52D27;
+}
+.index__bandcamp {
+  background-color: #619AAA;
+}
+.index a:hover {
+  cursor: alias;
+}
+body.bump .frumper {
+  opacity: 1;
+  visibility: visible;
+}
+.frumper {
+	opacity: 0;
+	visibility: hidden;
+	
+	position: fixed;
+	background-color: transparent;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	z-index: 4;
+	cursor: default;
+}
+.frumper--image--1,
+.frumper--image--2 {
+	z-index: 1;
+	position: fixed;
+	background-color: transparent;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+body.flash-off .frumper--image--2 {
+	display: none;
+}
+body.flash-on .frumper--image--1 {
+	display: none;
+}
 .navigation {
 	list-style: none;
 	display: -webkit-box;

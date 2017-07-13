@@ -2,7 +2,7 @@ import $ from 'jquery';
 
 class Hover {
 	constructor() {
-		this.finding = $(".find a, .month__box, .search__box, .archive__month");
+		this.finding = $(".find a, .month__box, .search__box, .archive__month, .index a");
 		this.flashlight = $(".title__logo");
 		this.events();
 	}

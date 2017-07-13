@@ -37,6 +37,19 @@ class Bumper {
 	            $('body').removeClass('intro');
 	        }, 3600);
 	    }
+
+	    if ($('body').hasClass('page--front')) {
+	        $('body').addClass('flash-off');
+	        setTimeout(function(){
+	            $('body').removeClass('flash-off');
+	            $('body').addClass('flash-on');
+	        }, 900);
+	        setTimeout(function(){
+	            $('body').removeClass('flash-on');
+	            $('body').removeClass('bump');
+	            $('body').removeClass('intro');
+	        }, 1800);
+	    }
 	}
 
 	bumpAgain() {

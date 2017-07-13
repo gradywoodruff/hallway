@@ -1,0 +1,71 @@
+.index {
+	padding-right: 0.72rem;
+	font-size: $textM;
+	line-height: 1.2; 
+	margin-bottom: 4.5rem;
+	text-indent: $indent;
+	hyphens: auto;
+
+	@mixin atS {
+		font-size: $textL;
+	}
+
+	&__apple {
+		background-color: $metaApple;
+	}
+	&__spotify {
+		background-color: $metaSpotify;
+	}
+	&__soundcloud {
+		background-color: $metaSoundcloud;
+	}
+	&__youtube {
+		background-color: $metaYoutube;
+	}
+	&__bandcamp {
+		background-color: $metaBandcamp;
+	}
+
+	& a:hover {
+		cursor: alias;
+	}
+
+}
+body.bump {
+	& .frumper {
+		opacity: 1;
+		visibility: visible;
+	}
+}
+.frumper {
+	opacity: 0;
+	visibility: hidden;
+	
+	position: fixed;
+	background-color: transparent;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	z-index: 4;
+	cursor: default;
+}
+.frumper--image--1,
+.frumper--image--2 {
+	z-index: 1;
+	position: fixed;
+	background-color: transparent;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+body.flash-off .frumper--image--2 {
+	display: none;
+}
+body.flash-on .frumper--image--1 {
+	display: none;
+}
