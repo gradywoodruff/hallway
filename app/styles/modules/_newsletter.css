@@ -1,0 +1,70 @@
+.newsletter {
+
+	&__section {
+		position: relative;
+		height: 100%;
+		height: 100vh;
+		width: 100%;
+		overflow: hidden;
+
+		&--black {
+			background-color: $black;
+		}
+	}
+
+	&__bump {
+		position: fixed;
+		background-color: $white;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		left: 0;
+		z-index: 4;
+		cursor: default;
+	}
+
+	&__opening {
+		color: $white;
+		position: absolute;
+		font-size: $textM;
+		padding: 0 1.8rem;
+		line-height: 1.08;
+		text-align: justify;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+
+	&__logo {
+
+	    &--on {
+			position: absolute;
+		    top: 50%;
+		    left: 50%;
+		    transform: translate(-50%, -50%);
+			display: inline-block;
+		    background-size: 3.33rem 3.33rem;
+		    width: 3.33rem;
+		    height: 3.33rem;
+	    }
+	}
+	&__message {
+		position: absolute;
+		color: $white;
+		text-transform:uppercase;
+		top: 50%;
+		transform: translateY(-50%);
+		font-size: $textL;
+		width: 63%;
+	}
+
+	&__image {	
+		z-index: 1;
+		position: relative;
+		background-color: $white;
+		width: 100%;
+		height: 100vh;
+		background-repeat: no-repeat;
+	    background-position: center center;
+	    background-size: cover;
+	}
+}

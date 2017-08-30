@@ -1,0 +1,65 @@
+.print {
+
+
+	&__header {
+		display: none;
+	}
+}
+
+@media print {
+
+	* {-webkit-print-color-adjust:exact;}
+	.searchform {
+		display: none;
+	}
+	.wrap--top-pad {
+		padding-top: 1.8rem;
+	}
+	.find {
+		font-size: $textM;
+		max-width: 72%;
+		margin-top: 0;
+		margin-bottom: 1.8rem;
+
+		&__name {
+			padding-left: 0;
+			padding-right: 0;
+			margin-left: 0;
+			margin-right: 0;
+		}
+		&__context {
+			margin: 0 0.333rem;
+
+			&:after {
+				font-size: $textXs;
+				line-height: 20px;
+				display: block;
+				vertical-align: text-bottom;
+				font-style: normal;
+				content: " (" attr(data-link) ")";
+			}
+		}
+	}
+	.page--finds .bumper {
+		opacity: 1;
+		visibility: visible;
+		position: relative;
+		height: 100%;
+		height: 100vh;
+	}
+
+	.top {
+		display: none;
+	}
+
+	.find .find__context {    
+		display: inline;
+    	margin: 0 0.9rem;
+	}
+	.find .find__context-button {
+		display: none;
+	}
+	footer {
+		display: none;
+	}
+}

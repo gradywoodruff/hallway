@@ -41,6 +41,9 @@ function hallway_setup() {
 
 } add_action('after_setup_theme', 'hallway_setup');
 
+function empty_content($str) {
+    return trim(str_replace('&nbsp;','',strip_tags($str))) == '';
+}
 
 
 function hllwy_book_post_type () {
@@ -79,6 +82,43 @@ function hllwy_book_post_type () {
 	);
 	register_post_type('books',$books);
 } add_action('after_setup_theme', 'hllwy_book_post_type');
+
+function hllwy_newsletter_post_type () {
+	$labels = array (
+		'name' => 'Newsletters',
+		'singular_name' => 'Newsletter',
+		'add_new' => 'Add Newsletter',
+		'all_items' => 'All Newsletters',
+		'add_new_item' => 'Add Newsletter',
+		'edit_item' => 'Edit Newsletter',
+		'new_item' => 'New Newsletter',
+		'view_item' => 'View Newsletter',
+		'search_item' => 'Search Newsletters',
+		'not_found' => 'No Newsletters Found',
+		'not_found_in_trash' => 'No Newsletters Found In Trash',
+		'parent_item_colon' => 'Parent Newsletter'
+	);
+	$newsletters = array(
+		'labels' => $labels,
+		'public' => true,
+		'has_archive' => true,
+		'publicly_queryable' => true,
+		'query_var' => true,
+		'rewrite' => true,
+		'capability_type' => 'post',
+		'hierarchical' => false,
+		'supports' => array(
+			'title',
+			'editor',
+			'thumbnail',
+			'revisions',
+		),
+		'taxonomies' => array('category', 'post_tag'),
+		'menu_position' =>5,
+		'exclude_from_search' => false
+	);
+	register_post_type('newsletters',$newsletters);
+} add_action('after_setup_theme', 'hllwy_newsletter_post_type');
 
 
 function hllwy_story_post_type () {
